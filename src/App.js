@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import { Container, Row, Col } from 'reactstrap';
+import Box from './Box';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Row id="header">
+        <Col>
+          <h1>LIVE COUNT</h1>
+          <img src="instagram.png" id="instagram-logo"></img>
+        </Col>
+      </Row>
+      <Row id="content">
+        <Col>
+          <Box username='demi.demik'></Box>
+        </Col>
+        <Col>
+          <Box username='fikinakii'></Box>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

@@ -1,38 +1,44 @@
-.App {
+#header {
+  margin-top: 30px;
+}
+
+#header #instagram-logo {
+  width: 100px;
+  display: inline-block;
+}
+
+#header h1 {
+  width: 240px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#header div {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box {
+  box-shadow: 10px 10px 14px -3px #333;
+  border-radius: 22px;
+  background: #fff;
+  padding: 35px 40px;
+  margin-bottom: 35px;
+  min-height: 240px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box img {
+  border: 5px double rgb(123, 206, 255);
+  margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.box .followers-num {
+  font-size: 35px;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box .gap {
+  font-size: 22px;
+  margin-left: 12px;
+  font-weight: 700;
 }
